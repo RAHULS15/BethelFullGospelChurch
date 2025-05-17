@@ -1,5 +1,6 @@
 /* General Styles */
 body {
+
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
@@ -94,6 +95,10 @@ nav ul li a:hover {
 
 /* Home Section - Slideshow */
 .hero {
+    
+  background-image: url("https://tse4.mm.bing.net/th?id=OIP.IcmAuKmr1-QHMx9dmJy_YgHaH_&pid=Api&P=0&h=180");
+
+
     position: relative;
     height: 100vh;
     overflow: hidden;
@@ -390,7 +395,9 @@ form button:hover {
 
 /* Footer */
 footer {
+    
     background: linear-gradient(135deg, #6a11cb, #2575fc);
+    background: url(banner3.png);
     color: #fff;
     text-align: center;
     padding: 20px 0;
@@ -1156,4 +1163,147 @@ html {
   margin-top: 0;
 }
 
+.ministry-gallery {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
 
+.ministry-gallery img {
+  width: 260px;         /* increased from 200px */
+  height: 170px;        /* increased from 130px */
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+
+/* UI changes */
+
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    background: linear-gradient(135deg, #f9f9f9, #e6f7ff);
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Backgrounds for Sections (temporary) */
+.about,  .ministries-section,  .contact {
+    background: url("Banner.png") center/cover no-repeat;
+    background-blend-mode: overlay;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+/*
+ .contact {
+    background: url("https://t3.ftcdn.net/jpg/06/21/66/16/240_F_621661687_v4T4MkLcBC7jvmd6U965UuC57k2iDVm4.jpghttps://t4.ftcdn.net/jpg/02/94/89/67/240_F_294896749_8CjAj1hQGT8R1xJGdNbJCiiPF6fDE7jD.jpghttps://t4.ftcdn.net/jpg/05/18/16/83/240_F_518168340_egOI7ZCxAjggHxsWQ8i7kOxNHjW1Kd0D.jpghttps://t3.ftcdn.net/jpg/02/73/60/86/240_F_273608614_a5a5WP7QfxwSLbnC6O5fHYSJhI5hFlcf.jpg") center/cover no-repeat;
+    background-blend-mode: overlay;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+*/
+ .gallery, .fellowship,  .events {
+    background: url("banner2.png") center/cover no-repeat;
+    background-blend-mode: overlay;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.ministries-section{
+    background: url("banner3.png") center/cover no-repeat;
+    background-blend-mode: overlay;
+    background-color: rgba(255, 255, 255, 0.05);
+
+} 
+
+
+/* Glassmorphism Card Style */
+.glass-card {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.glass-card:hover {
+    box-shadow: 0 12px 48px rgba(0, 0, 0, 0.5);
+}
+
+/* Apply glass-card to existing card types */
+.ministry-card, .event-item, .fellowship-item, .pastor-card, .modal-content, .contact-form, .event-registration {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.ministry-card:hover, .event-item:hover, .fellowship-item:hover, .pastor-card:hover, .modal-content:hover, .contact-form:hover, .event-registration:hover {
+    box-shadow: 0 12px 48px rgba(0, 0, 0, 0.5);
+}
+
+/* Add padding and hover scale for better effect */
+.ministry-card, .event-item, .fellowship-item, .pastor-card, .modal-content, .contact-form, .event-registration {
+    padding: 15px;
+    transform: scale(1);
+}
+
+.ministry-card:hover, .event-item:hover, .fellowship-item:hover, .pastor-card:hover, .modal-content:hover, .contact-form:hover, .event-registration:hover {
+    transform: scale(1.02);
+}
+
+/* Inputs & Buttons with Glassmorphism */
+form input, form textarea, form select {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    transition: all 0.3s ease;
+}
+
+form input::placeholder,
+form textarea::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+form input:focus,
+form textarea:focus,
+form select:focus {
+    border-color: #ffffff;
+    outline: none;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+form button, .pagination button, .learn-more-btn, .collapse-btn {
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    color: #fff;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+form button:hover, .pagination button:hover, .learn-more-btn:hover, .collapse-btn:hover {
+    background: rgba(255, 255, 255, 0.4);
+    color: #000;
+}
